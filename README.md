@@ -14,6 +14,8 @@ a bunch of personal javascripts usable via CDN ([jsdelivr][jd] or [github][gh])
     - https://cloudflare-ipfs.com/ipfs/QmUn2rcko9Axi4AjbxtLPnszMQUNnnC89NiKinKePu1oHV/js
     - https://iglake.github.io/js
 
+[![](https://data.jsdelivr.com/v1/package/gh/iglake/js/badge)](https://www.jsdelivr.com/package/gh/iglake/js)
+
 ### Examples:
 
  * collaborative framapad "web-page" : <http://ipfs.io/ipfs/QmUn2rcko9Axi4AjbxtLPnszMQUNnnC89NiKinKePu1oHV/js/examples/frama.htm>
