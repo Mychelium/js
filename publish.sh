@@ -29,7 +29,7 @@ echo $tic: $qm >> qm.log
 echo " - $qm" >> mutable.yml
 tail -1 qm.log
 echo http://127.0.0.1:8080/ipfs/$qm
-ver=$($HOME/bin/version -a README.md | xyml scheduled)
+ver=$(version -a README.md | xyml scheduled)
 echo $ver > VERSION
 
 
