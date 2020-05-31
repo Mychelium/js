@@ -4,7 +4,12 @@
 set -x
 
 symb=jscript
+if ! ipfs key list | grep -q -w $symb; then
+key=$(ipfs key gen -t rsa -s 3072 $symb)
+else
 key=$(ipfs key list -l | grep -w $symb | cut -d' ' -f 1)
+fi
+echo key: $key;
 gitid=$(git rev-parse --short HEAD)
 
 if false; then
@@ -24,7 +29,7 @@ echo $tic: $qm >> qm.log
 echo " - $qm" >> mutable.yml
 tail -1 qm.log
 echo http://127.0.0.1:8080/ipfs/$qm
-ver=$($HOME/bin/version README.md | xyml scheduled)
+ver=$($HOME/bin/version -a README.md | xyml scheduled)
 echo $ver > VERSION
 
 

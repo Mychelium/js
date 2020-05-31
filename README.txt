@@ -3,31 +3,31 @@
 <!-- vim: ft=markdown nospell
 -->
 a bunch of personal javascripts usable via CDN ([jsdelivr][jd], [cloudflare][cf] or [github][gh])
-(last [commit](https://github.com/iglake/js/commit/) & [releases](https://github.com/iglake/js/releases))
+(last [commit](https://github.com/mychelium/js/commit/) & [releases](https://github.com/mychelium/js/releases))
 
  * [inc.js][1] : a javascript that replace div with class=include with the content of its data-src's attribute
  * [inc-fp.js][2] : a javascript to include and render a markdown file from framapad
- * [...](https://cdn.jsdelivr.net/gh/iglake/js@master/dist/)
+ * [...](https://cdn.jsdelivr.net/gh/mychelium/js@master/dist/)
 
-[1]: https://cdn.jsdelivr.net/gh/iglake/js@master/dist/inc.js
-[2]: https://cdn.jsdelivr.net/gh/iglake/js@master/dist/inc-fp.js
+[1]: https://cdn.jsdelivr.net/gh/mychelium/js@master/dist/inc.js
+[2]: https://cdn.jsdelivr.net/gh/mychelium/js@master/dist/inc-fp.js
 
 
 
  * other URLs for accessing the files :
     - <https://gateway.ipfs.io/ipfs/$rootkey/www/js>
     - <https://cloudflare-ipfs.com/ipfs/$www/js>
-    - <https://iglake.github.io/js>
+    - <https://mychelium.github.io/js>
 
-[![version](https://badge.fury.io/gh/iglake%2Fjs.svg)](https://badge.fury.io/gh/iglake%2Fjs)
-[![](https://data.jsdelivr.com/v1/package/gh/iglake/js/badge)](https://www.jsdelivr.com/package/gh/iglake/js)
+[![version](https://badge.fury.io/gh/mychelium%2Fjs.svg)](https://badge.fury.io/gh/mychelium%2Fjs)
+[![](https://data.jsdelivr.com/v1/package/gh/mychelium/js/badge)](https://www.jsdelivr.com/package/gh/mychelium/js)
 
 ### Examples:
 
  * collaborative framapad "web-page" : <http://ipfs.io/ipfs/$www/js/examples/frama.htm>
- *  or <https://iglake.github.io/js/examples/frama.htm>
+ *  or <https://mychelium.github.io/js/examples/frama.htm>
 
- *  ipfs node detection : <https://iglake.github.io/js/examples/ipfsdetect.htm>
+ *  ipfs node detection : <https://mychelium.github.io/js/examples/ipfsdetect.htm>
 
  * misc : about [how](https://www.one-tab.com/page/XuCCeOg2SkSSwTD8JzvWfw) to publish on GitHub (see <https://ipfs.io/ipfs/QmX87y253JbdLWUcd5Qdd3HaBYpoiqr8wVUYQHiuNYHAG2/>)
 
@@ -37,19 +37,19 @@ a bunch of personal javascripts usable via CDN ([jsdelivr][jd], [cloudflare][cf]
 
 ```html
 <!-- previous revision: $gitid
-<script src="https://cdn.statically.io/gh/iglake/js/$gitid/dist/inc-fp.js">
+<script src="https://cdn.statically.io/gh/mychelium/js/$gitid/dist/inc-fp.js">
 -->
-<!-- current revision: latest : https://github.com/iglake/js/commit/master -->
-<script src="https://cdn.jsdelivr.net/gh/iglake/js@master/dist/inc-fp.min.js">
+<!-- current revision: latest : https://github.com/mychelium/js/commit/master -->
+<script src="https://cdn.jsdelivr.net/gh/mychelium/js@master/dist/inc-fp.min.js">
 </script>
  ```
 
-[gh]: http://github.com/iglake/
-[jd]: https://www.jsdelivr.com/package/gh/iglake/js
+[gh]: http://github.com/mychelium/
+[jd]: https://www.jsdelivr.com/package/gh/mychelium/js
 [cf]: https://cloudflare-ipfs.com/ipfs/$www/js
 
 clone it with the following command :
-  ```git clone https://github.com/iglake/js.git```
+  ```git clone https://github.com/mychelium/js.git```
 
 ### Currently working on
 
@@ -58,4 +58,3 @@ clone it with the following command :
 
 ### Last fix ...
 
- - added %search% to sub.js
