@@ -7,12 +7,14 @@ symb=jscript
 key=$(ipfs key list -l | grep -w $symb | cut -d' ' -f 1)
 gitid=$(git rev-parse --short HEAD)
 
+if false; then
 # synchronize w/ local files !
 # master :
 rsync -aub $HOME/HDD/websites/tommy/repositories/helio/js/*.js $HOME/GITrepo/iglake/cssjs/js/src/
 rsync -aub $WWW/js/*.js $HOME/GITrepo/iglake/cssjs/js/src/
 # sync back ...
 rsync -Caub $HOME/GITrepo/iglake/cssjs/js/src/*.js $WWW/js/
+fi
 
 # no examples is in dist !
 qm=$(ipfs add -Q -r -w src/*.js README.md qm.log --cid-base=base58btc)
@@ -53,7 +55,7 @@ echo -n "rootkey: "
 rootkey=$(ipfs files stat /root --hash)
 echo https://gateway.ipfs.io/ipfs/$rootkey/www/js
 echo cf: https://$ww32.cf-ipfs.com/js
-echo cdn: https://cdn.jsdelivr.net/gh/iglake/js@master/dist/inc.min.js
+echo cdn: https://cdn.jsdelivr.net/gh/mychelium/js@master/dist/inc.min.js
 # update README ...
 cat README.txt | sed -e "s/\$ver/$ver/g" -e "s/\$gitid/$gitid/g" \
     -e "s/\$qm/$qm/g" -e "s/\$rootkey/$rootkey/" -e "s/\$www/$www/" > README.md
@@ -83,6 +85,6 @@ fi
 echo "git push : "
 git push --follow-tags
 echo .
-echo url: https://github.com/iglake/js/releases/
-echo url: https://cdn.jsdelivr.net/gh/iglake/js@master/
+echo url: https://github.com/mychelium/js/releases/
+echo url: https://cdn.jsdelivr.net/gh/mychelium/js@master/
 
