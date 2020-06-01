@@ -92,4 +92,5 @@ git push --follow-tags
 echo .
 echo url: https://github.com/mychelium/js/releases/
 echo url: https://cdn.jsdelivr.net/gh/mychelium/js@master/
+echo url: https://www.jsdelivr.com/package/gh/mychelium/js/
 
