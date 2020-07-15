@@ -1,14 +1,16 @@
+<!DOCTYPE html>
+<title> Compute SHA256 of a text in pure JS></title>
 
-
+<script src="https://cdn.jsdelivr.net/gh/mychelium/js@9768641/dist/sha256.min.js" integrity="sha256-YIafx9wlTYK6CHM0cY15DbyqIN2pA/Yy4QpMrwf9Cpg=" crossorigin="anonymous"></script>
 <p>SHA-256:
+<br>
+      <textarea id="input" rows=2 cols=74>abc</textarea>
+     <br>
+      <input id="button" type="button" value="compute" />
+      <br><textarea id="output" rows=1 cols=62></textarea>
 
-<script src="https://cdn.jsdelivr.net/gh/mychelium/js@master/dist/sha256.min.js"></script>
-			<textarea id="input" rows=5>abc</textarea>
-			<input id="button" type="button" value="calculate" />
-			<textarea id="output" rows=1 style="text-align: center"></textarea>
-
-			<script>
-				document.getElementById('button').onclick = function () {
-					document.getElementById('output').value = sha256(document.getElementById('input').value);
-				};
-			</script>
+<script>
+  document.getElementById('button').onclick = function () {
+    document.getElementById('output').value = sha256(document.getElementById('input').value);
+  };
+</script>
