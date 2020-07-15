@@ -15,8 +15,8 @@ a bunch of personal javascripts usable via CDN ([jsdelivr][jd], [cloudflare][cf]
 
 
  * other URLs for accessing the files :
-    - <https://gateway.ipfs.io/ipfs/Qmdf2MD2oMcLB87BukV73NFYSVGjeTpYJcLrAm6v8gtz8v/www/js>
-    - <https://cloudflare-ipfs.com/ipfs/Qmc59bLKSViJMxEq4BW1ayNsnDnHhg38CCGWWRY3QUUbYZ/js>
+    - <https://gateway.ipfs.io/ipfs/QmQN3SXC2XV6B1HEgHzUwSW5TwkdAxqcWY7FVXW9Cbu2Df/www/js>
+    - <https://cloudflare-ipfs.com/ipfs/QmVccXGnbgZcerE2Mo71P4HSe1sUaXop1msnhibzREBzbB/js>
     - <https://mychelium.github.io/js>
 
 [![version](https://badge.fury.io/gh/mychelium%2Fjs.svg)](https://badge.fury.io/gh/mychelium%2Fjs)
@@ -24,20 +24,20 @@ a bunch of personal javascripts usable via CDN ([jsdelivr][jd], [cloudflare][cf]
 
 ### Examples:
 
- * collaborative framapad "web-page" : <http://ipfs.io/ipfs/Qmc59bLKSViJMxEq4BW1ayNsnDnHhg38CCGWWRY3QUUbYZ/js/examples/frama.htm>
+ * collaborative framapad "web-page" : <http://ipfs.io/ipfs/QmVccXGnbgZcerE2Mo71P4HSe1sUaXop1msnhibzREBzbB/js/examples/frama.htm>
  *  or <https://mychelium.github.io/js/examples/frama.htm>
 
  *  ipfs node detection : <https://mychelium.github.io/js/examples/ipfsdetect.htm>
 
  * misc : about [how](https://www.one-tab.com/page/XuCCeOg2SkSSwTD8JzvWfw) to publish on GitHub (see <https://ipfs.io/ipfs/QmX87y253JbdLWUcd5Qdd3HaBYpoiqr8wVUYQHiuNYHAG2/>)
 
- * blockRing™ hash : qm=[zdj7WhV8AWmjH5rZZCKSvrf4Thh1TaziHoJAS6kEpP2X5AC5J](http://gateway.ipfs.io/ipfs/zdj7WhV8AWmjH5rZZCKSvrf4Thh1TaziHoJAS6kEpP2X5AC5J)
+ * blockRing™ hash : qm=[zdj7WfiVZmLCToTycEec1ArpTjpm3BKGXVz1MuJsUPCu5cfub](http://gateway.ipfs.io/ipfs/zdj7WfiVZmLCToTycEec1ArpTjpm3BKGXVz1MuJsUPCu5cfub)
 
 ### Usage:
 
 ```html
-<!-- previous revision: ba13394
-<script src="https://cdn.statically.io/gh/mychelium/js/ba13394/dist/inc-fp.js">
+<!-- previous revision: 76b9bf3
+<script src="https://cdn.statically.io/gh/mychelium/js/76b9bf3/dist/inc-fp.js">
 -->
 <!-- current revision: latest : https://github.com/mychelium/js/commit/master -->
 <script src="https://cdn.jsdelivr.net/gh/mychelium/js@master/dist/inc-fp.min.js">
@@ -46,7 +46,7 @@ a bunch of personal javascripts usable via CDN ([jsdelivr][jd], [cloudflare][cf]
 
 [gh]: http://github.com/mychelium/
 [jd]: https://www.jsdelivr.com/package/gh/mychelium/js
-[cf]: https://cloudflare-ipfs.com/ipfs/Qmc59bLKSViJMxEq4BW1ayNsnDnHhg38CCGWWRY3QUUbYZ/js
+[cf]: https://cloudflare-ipfs.com/ipfs/QmVccXGnbgZcerE2Mo71P4HSe1sUaXop1msnhibzREBzbB/js
 
 clone it with the following command :
   ```git clone https://github.com/mychelium/js.git```
@@ -58,3 +58,4 @@ clone it with the following command :
 
 ### Last fix ...
 
+- added sha256 support

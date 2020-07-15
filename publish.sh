@@ -1,7 +1,7 @@
 #
 
 # vim: nospell
-set -x
+#set -e
 
 symb=jscript
 if ! ipfs key list | grep -q -w $symb; then
@@ -49,7 +49,8 @@ echo -n "www: "
 www=$(ipfs files stat /root/www --hash)
 if [ "x$www" != 'x' ]; then
 ww32=$(ipfs cid base32 $www)
-echo http://$ww32.ipfs.dweb.link/js
+ww36=$(ipfs cid format -f=%m -b=base36 $www)
+echo http://$ww36.ipfs.dweb.link/js
 echo url: https://gateway.ipfs.io/ipfs/$www/js
 
 echo "info: /ipfs/$www/js"
