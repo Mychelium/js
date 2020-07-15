@@ -58,4 +58,3 @@ clone it with the following command :
 
 ### Last fix ...
 
-- added sha256 support

@@ -1,0 +1,14 @@
+
+
+<p>SHA-256:
+
+<script src="https://cdn.jsdelivr.net/gh/mychelium/js@master/dist/sha256.min.js"></script>
+			<textarea id="input" rows=5>abc</textarea>
+			<input id="button" type="button" value="calculate" />
+			<textarea id="output" rows=1 style="text-align: center"></textarea>
+
+			<script>
+				document.getElementById('button').onclick = function () {
+					document.getElementById('output').value = sha256(document.getElementById('input').value);
+				};
+			</script>
